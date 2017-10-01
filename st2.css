@@ -36,6 +36,11 @@ li a:hover {
     background-color: #a1a1a1;
 }
 
+td {
+    height: 50px;
+    vertical-align: top;
+	text-align: left;
+}
 
 .active {
     background-color: #A9A9A9;
