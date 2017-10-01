@@ -1,0 +1,40 @@
+/*Allows header to scroll down*/
+header {
+     position:fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+ }
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    /*The code below lets nav bar move when you scroll*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #a1a1a1;
+}
+
+
+.active {
+    background-color: #A9A9A9;
+}
