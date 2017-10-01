@@ -42,6 +42,11 @@ td {
 	text-align: left;
 }
 
+a {
+	font-family: 'Roboto Mono', serif;
+	color: green;
+}
+
 .active {
     background-color: #A9A9A9;
 }
