@@ -12,6 +12,8 @@ nav {
     padding: 0;
     overflow: hidden;
     background-color: #f1f1f1;
+    font-family: 'Roboto Slab', serif; /*Select font from fonts.google.com*/
+    font-size: 24px;
     /*The code below lets nav bar move when you scroll*/
     position: fixed;
     top: 0;
@@ -24,7 +26,7 @@ li {
 
 li a {
     display: block;
-    color: red;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -37,4 +39,12 @@ li a:hover {
 
 .active {
     background-color: #A9A9A9;
+}
+
+.floatleft {
+    float:left;
+}
+
+.floatright {
+    float:right;
 }
