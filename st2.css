@@ -46,6 +46,10 @@ td {
     background-color: #A9A9A9;
 }
 
+.oswald {
+	font-family: 'Oswald', serif;
+}
+
 .floatleft {
     float:left;
 }
