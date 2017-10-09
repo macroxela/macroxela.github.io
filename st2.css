@@ -51,6 +51,12 @@ a {
 	color: green;
 }
 
+b {
+	font-family: 'Roboto Slab', serif; /*Select font from fonts.google.com*/
+	background-color: #f1f1f1;
+}
+
+
 .active {
     background-color: #A9A9A9;
 }
