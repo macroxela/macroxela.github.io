@@ -36,7 +36,7 @@ li a:hover {
     background-color: #a1b1c1;
 }
 
-li.disabled, li.disabled:hover{
+li a.disabled, li a.disabled:hover{
     background-color: #f1f1f1;
 }
 
