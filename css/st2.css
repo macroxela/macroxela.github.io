@@ -43,7 +43,7 @@ nav {
 
 /**************************************************/
 /*For mobile browsers*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
   nav {
     padding: 3px;
     font-size: 5px;
