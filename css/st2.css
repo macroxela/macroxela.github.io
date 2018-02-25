@@ -52,11 +52,11 @@ nav {
 }
 /**************************************************/
 
-li {
+nav li {
     float: left;
 }
 
-li a {
+nav li a {
     display: block;
     color: black;
     text-align: center;
@@ -64,11 +64,11 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: #a1b1c1;
 }
 
-li a.disabled, li a.disabled:hover{
+nav li a.disabled, li a.disabled:hover{
     background-color: #f1f1f1;
 }
 
