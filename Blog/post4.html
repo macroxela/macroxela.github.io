@@ -1,0 +1,147 @@
+
+<html>
+<head>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114293796-1"></script>
+<script> //For Google Analytics
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-114293796-1');
+</script>
+
+</head>
+
+<header>
+<title>Deriving Special Relativity with Geometry</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<link rel="stylesheet" href="../css/st2.css" type="text/css">
+<nav>
+<div class="floatleft">
+  <li><a href="/">Home</a></li>
+  <li><a class="active" href="base">Blog</a></li>
+  <li><a href="../projects">Projects</a></li>
+  <li><a href="../travel">Travel</a></li>
+  <li><a href="../about">About</a></li>
+  <li><a href="../experience">Experience</a></li>
+</div>
+<div class="floatright">
+  <li><a class="disabled">Alex Marroquin</a></li>
+</div>
+</nav>
+
+</header>
+
+<body>
+<br><br><br>
+<h1>Deriving Special Relativity with Geometry: Time Dilation</h1>
+<h3>10 Mar 2018</h3>
+
+<div class="oswald">
+Special relativity is one of those concepts many people think requires advanced knowledge of mathematics and physics to
+understand. After all, it's what made Einstein famous. How could one of us understand his work? In fact you only need
+some algebra and geometry along with some basic physics to derive it. Begin with the following assumptions:<br><br>
+
+1. The speed of light `c` is constant to all observers regardless of the reference frame they are in. This means light moves
+at `c` for someone who stands still as well as someone who is on a moving car no matter the speed.<br><br>
+
+2. The laws of physics are the same on any reference frame. A ball thrown in the air will behave in the same way when thrown
+inside a moving car or when thrown outside. Because of this an observer cannot distinguish whether they are in a moving
+reference frame or not i.e. whether they are in a moving car with no windows or a still room with no windows.<br><br>
+
+From both postulates and some basic physics one can formulate the special theory of relativity. To do so let's consider a thought
+experiment. Imagine you are standing by the street while your friend drives a car passing by you. You want to compare your time
+to his time. To do so both of you will use a special kind of clock. This special clock, instead of being digital or using the usual
+hands, consists of a beam of light bouncing up and down between two mirrors. The time it takes for the beam to travel distance `y`
+(distance between mirrors) is one unit of time `t_1`. The distance can be determined by multipliying time with the speed
+of light resulting in `y=ct_1`. For this thought experiment we will assume `t_1` is measured by your friend in the car. When
+you were standing still relative to the clock (on the car with your friend), the beam just bounced up and down. But when observing your friend's clock from the
+sidewalk, the beam doesn't just move vertically. It also moves horizontally. The combined movement makes the beam move diagonally
+tracing am isoceles triangle with the road as the base.<br><br>
+
+<!--
+From both postulates and some basic physics one can formulate the special theory of relativity. To do so let's consider a thought
+experiment. Imagine you are standing by the freeway while your friend drives a car passing by you.
+Each of you has a clock to keep track of time. However, the clock both of you posses differs from regular clocks. It consists of a beam of light bouncing up and
+down between two mirrors. The time it takes for the beam to travel distance `y` (distance between mirrors) is one unit of time `t_1`.
+From your perspective, the beam of light in your clock simply moves vertically. But when observing your friend's clock, the beam
+doesn't just move vertically. It also moves horizontally. The combined movement makes the beam move diagonally tracing am isoceles
+triangle with the road as the base.<br><br>
+
+http://www.askamathematician.com/2011/01/q-why-does-relativistic-length-contraction-lorentz-contraction-happen/
+https://physics.stackexchange.com/questions/14362/help-me-gain-an-intuitive-understanding-of-lorentz-contraction?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
+-->
+
+<center>
+<img src="../img/lighttri.png" alt="triangle" align="middle">
+</center>
+
+The beam travels distance `p` diagonally while the car moves distance `x` horizontally. The maximum height of the beam is still `y`.
+By the Pythagorean theorem the distances can be related through the equation `p^2=y^2+x^2`. Since distance is simply speed times time
+we can replace the distance variables with their corresponding velocities and times. For the vertical distance we get `y=ct_1`, the
+speed of light times the unit of time it takes to travel (from the perspective of the car).
+The diagonal distance is `p=ct_2` because it takes `t_2` time (as measured from your perspective outside the car) for the beam to travel
+between both mirrors once at speed `c`.
+The horizontal distance is `x=vt_2` since the car moves at velocity  `v` for `t_2` units of time during time it takes the beam to reach the
+other mirror.
+
+<!--it reaches the maximum height at the same time the car travels distance `x` with the beam moving at
+speed  `c`. -->
+
+Plugging in for each variable results in `(ct_2)^2=(ct_1)^2+(vt_2)^2`. As we can see there exist two different variables for
+time. The first variable   `t_1` represents one unit of time from your clock while `t_2` is one unit of time on the moving car from your
+perspective. Within time `t_2` the car moves distance `x` and the beam of light travels the length of the hypotenuse `p` hence why both have the same variable for time. Solving for `t_1` results in <br><br>
+
+<center>
+`(ct_1)^2+(vt_2)^2=(ct_2)^2`<br><br>
+`(ct_1)^2=(ct_2)^2-(vt_2)^2`<br><br>
+`ct_1=sqrt((ct_2)^2-(vt_2)^2)`<br><br>
+`t_1=frac(sqrt((ct_2)^2-(vt_2)^2))(c)`<br><br>
+`t_1=frac(sqrt(t_2^2(c^2-v^2)))(c)`<br><br>
+`t_1=frac(t_2sqrt(c^2-v^2))(c)`<br><br>
+`=t_2sqrt(frac(c^2-v^2)(c^2))`<br><br>
+`=t_2sqrt(1-frac(v^2)(c^2))`<br><br>
+`=t_2gamma, gamma=sqrt(1-frac(v^2)(c^2))`<br><br>
+</center>
+
+So one unit of time in your clock is not the same length as one unit of time on the moving car from your perspective. So how do the
+lengths of both times compare to each other? The time of the moving clock gets multiplied by factor `gamma`. Depending on the value
+of `gamma` the value of the stationary clock will be greater or smaller. Let's look at the ratio `frac(v^2)(c^2)`. If `v leq c` then
+`gamma` will always be smaller than 1 since   `0 leq frac(v^2)(c^2) leq 1` so `0 leq sqrt(1-frac(v^2)(c^2)) leq 1`. Having `v > c`
+will result in an imaginary number for `gamma` which doesn't make sense in this situation (imaginary time!). We don't have to deal with.
+Because `gamma` is a positive real number smaller than 1 it implies any multiplication with a second number `x` will result in a smaller
+value than the latter, `gamma x < x`. Thus from `t_1=t_2gamma` it follows that `t_1` is smaller than `t_2`, `t_1 < t_2`.
+What does this mean? A unit of time on a moving car is longer than a unit of time on a clock standing still. In fact, time seems to go slower
+on the moving car since it takes longer than a clock standing still to complete one unit. We just showed how special relativity works! The
+factor `gamma` applies not just to time but other values as well, such as length. Using the same thought experiment but in addition to
+the clock if both yourself and your friend have a meterstick, you will notice that your friend's meterstick is shorter than yours.
+<br><br><br><br>
+
+<!--
+So one unit of time in your clock is not the same length as one unit of time on the moving car from your perspective. So how do the
+lengths of both times compare to each other? The time you measured is being multiplied by factor `gamma`. To identify what is going
+on let's look at the ratio `frac(v^2)(c^2)`. If `v leq c` then `gamma` will always be smaller than 1 since   `0 leq frac(v^2)(c^2)
+leq 1` so `0 leq sqrt(1-frac(v^2)(c^2)) leq 1`. Having `v > c` will result in an imaginary number for `gamma` which doesn't make sense
+in this situation (imaginary time!). We don't have to deal with it. Since we divide proper time by `gamma` and gamma is smaller than 1
+it means the time you measure, `t_2` will be larger than the proper time `t_1`. In a sense, time dilated to compensate for the movement.
+What does this imply? Time flows slower to the person on the moving car than to the person standing on the sidewalk from the standing
+person's perspective.
+-->
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aZrjMmMBa_8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
+</div>
+
+
+
+</body>
+</html>
